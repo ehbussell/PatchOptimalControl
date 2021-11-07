@@ -1,0 +1,15 @@
+# Starting point file.
+# This file contains the values of the initial points
+# for variable IB
+
+# Type of initialization :
+linear
+
+# Number of interpolation points :
+4
+
+# Interpolation points for the starting point :
+0.0038659793814433 21.0622710622711
+0.121134020618557 195.054945054945
+0.345360824742268 14.6520146520147
+1 0.1

@@ -1,0 +1,14 @@
+# Starting point file.
+# This file contains the values of the initial points
+# for variable SV
+
+# Type of initialization :
+linear
+
+# Number of interpolation points :
+3
+
+# Interpolation points for the starting point :
+0.00902061855670103 99.0842490842491
+0.20360824742268 50.9157509157509
+0.993556701030928 41.2087912087912

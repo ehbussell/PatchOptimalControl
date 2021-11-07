@@ -1,0 +1,66 @@
+# This file defines all dimensions and parameters
+# values for your problem :
+
+# Initial and final time :
+time.free string none
+time.initial double 0.0
+time.final double 20.0
+
+# Dimensions :
+state.dimension integer 4
+control.dimension integer 2
+algebraic.dimension integer 0
+parameter.dimension integer 0
+constant.dimension integer 7
+boundarycond.dimension integer 4
+constraint.dimension integer 1
+
+# Discretization :
+discretization.steps integer 200
+discretization.method string gauss
+
+# Optimization :
+optimization.type string single
+batch.type integer 0
+batch.index integer 0
+batch.nrange integer 1
+batch.lowerbound double 0
+batch.upperbound double 0
+batch.directory string none
+
+# Initialization :
+initialization.type string from_init_file
+initialization.file string none
+
+# Parameter identification :
+paramid.type string false
+paramid.separator string ,
+paramid.file string no_directory
+paramid.dimension integer 0
+
+# Names :
+state.0 string SB
+state.1 string IB
+state.2 string SV
+state.3 string IV
+control.0 string fB
+control.1 string fV
+boundarycond.0 string SB(0)
+boundarycond.1 string IB(0)
+boundarycond.2 string SV(0)
+boundarycond.3 string IV(0)
+constraint.0 string Budget
+constant.0 string External
+constant.1 string Infection
+constant.2 string Coupling
+constant.3 string Treatment
+constant.4 string NB
+constant.5 string NV
+constant.6 string density_strength
+
+# Solution file :
+solution.file string problem.sol
+
+# Iteration output frequency :
+iteration.output.frequency integer 0
+
