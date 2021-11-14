@@ -395,7 +395,7 @@ class PatchModel:
                 "BOCOP"
             )
         
-        bocop_exe = os.path.join(BOCOP_dir, "bocop.exe")
+        bocop_exe = os.path.join(BOCOP_dir, "bocop")
         sol_file = os.path.join(BOCOP_dir, "problem.sol")
 
         set_BOCOP_params(self.params, self.dependence, folder=BOCOP_dir)

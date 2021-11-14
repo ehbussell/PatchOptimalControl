@@ -41,9 +41,8 @@ def readSolFile(file="problem.sol", ignore_fail=False):
                 Ut.append(list(map(float, allLines[i+1:i+1+2*time_steps])))
 
         for j in range(state_dim):
-            if ("# Dynamic constraint " + str(j) +
-                    " (y_dot - f = 0) multipliers :") in line:
-                Lt.append(list(map(float, allLines[i+1:i+1+time_steps])))
+            if ("# Dynamic constraint " + str(j)) in line:
+                Lt.append(list(map(float, allLines[i+2:i+2+time_steps])))
 
     results_file = os.path.join(os.path.dirname(file), "result.out")
     with open(results_file, "r") as infile:
